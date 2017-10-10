@@ -1,0 +1,33 @@
+{
+  "name": "nuxt-blog",
+  "description": "Personal Blog using Nuxt.js",
+  "version": "1.0.0-beta",
+  "license": "MIT",
+  "author": "Irfan Maulana (https://github.com/mazipan/)",
+  "private": false,
+  "main": "https://github.com/mazipan/nuxt-blog",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mazipan/nuxt-blog.git"
+  },
+  "dependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.0",
+    "eslint": "^4.6.1",
+    "eslint-plugin-vue": "3.13.0",
+    "nuxt": "^1.0.0-rc11",
+    "vue-i18n": "^7.3.1"
+  },
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "babel": {
+    "presets": [
+      "env"
+    ]
+  }
+}

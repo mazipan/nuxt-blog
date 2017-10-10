@@ -57,3 +57,8 @@ typings/
 # dotenv environment variables file
 .env
 
+# Nuxt build
+.nuxt
+
+# Nuxt generate
+dist
