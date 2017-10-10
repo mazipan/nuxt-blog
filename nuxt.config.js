@@ -5,6 +5,7 @@ module.exports = {
   },
   loading: { color: 'cyan' },
   router: {
+    base: '/nuxt-blog/',
     middleware: 'i18n'
   },
   plugins: ['~/plugins/i18n.js',],
