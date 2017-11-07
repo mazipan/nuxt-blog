@@ -1,15 +1,38 @@
 module.exports = {
+  head: {
+    title: 'nuxt-blog',
+    description: 'Personal Blog with Nuxt.js',
+    meta: [
+      { charset: 'utf-8' },
+      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+      { hid: 'description', name: 'description', content: 'Personal Blog with Nuxt.js' }
+    ],
+    link: [
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+    ]
+  },
   build: {
-    publicPath: '/nuxt-blog',
-    vendor: ['vue-i18n']
+    publicPath: '/nuxt-blog'
   },
   loading: { color: 'cyan' },
   router: {
-    base: '/nuxt-blog/',
-    middleware: 'i18n'
+    base: '/nuxt-blog/'
   },
-  plugins: ['~/plugins/i18n.js',],
   generate: {
-    routes: ['/', '/about', '/fr', '/fr/about']
+    routes: [
+      '/', 
+      '/about'
+    ]
+  },
+  css: [
+    'bulma/css/bulma.css',
+    '@/assets/main.css'
+  ],
+  render: {
+    bundleRenderer: {
+      shouldPreload: (file, type) => {
+        return ['script', 'style', 'font'].includes(type)
+      }
+    }
   }
 }

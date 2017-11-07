@@ -1,4 +1,18 @@
+<template>
+  <div class="Content">
+    <div class="container">
+      <h1 class="Content__Title">About</h1>
+      <p>Intro</p>
+    </div>
+  </div>
+</template>
+
 <script>
-import About from '~/pages/_lang/about'
-export default About
+export default {
+  head () {
+    return {
+      
+    }
+  }
+}
 </script>

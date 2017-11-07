@@ -1,4 +1,18 @@
+<template>
+  <div class="Content">
+    <div class="container">
+      <h1 class="Content__Title">Index</h1>
+      <p>Intro</p>
+    </div>
+  </div>
+</template>
+
 <script>
-import Index from '~/pages/_lang/index'
-export default Index
+export default {
+  head () {
+    return {
+      
+    }
+  }
+}
 </script>

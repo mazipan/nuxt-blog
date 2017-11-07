@@ -1,6 +1,6 @@
 {
   "name": "nuxt-blog",
-  "description": "Personal Blog using Nuxt.js",
+  "description": "Personal Blog with Nuxt.js",
   "version": "1.0.0-beta",
   "license": "MIT",
   "author": "Irfan Maulana (https://github.com/mazipan/)",
@@ -11,23 +11,44 @@
     "url": "https://github.com/mazipan/nuxt-blog.git"
   },
   "dependencies": {
-    "babel-core": "^6.26.0",
-    "babel-loader": "^7.1.2",
-    "babel-preset-env": "^1.6.0",
-    "eslint": "^4.6.1",
-    "eslint-plugin-vue": "3.13.0",
-    "nuxt": "^1.0.0-rc11",
-    "vue-i18n": "^7.3.1"
   },
   "scripts": {
     "dev": "nuxt",
-    "build": "nuxt build",
-    "start": "nuxt start",
-    "generate": "nuxt generate"
+    "build": "./node_modules/.bin/nuxt build",
+    "start": "./node_modules/.bin/nuxt start",
+    "lint": "./node_modules/.bin/eslint --ext .js,.vue pages layout --color",
+    "dist": "./node_modules/.bin/nuxt generate"
   },
   "babel": {
     "presets": [
       "env"
     ]
+  },
+  
+  "eslintConfig": {
+    "extends": [
+      "eslint:recommended",
+      "plugin:vue/recommended"
+    ]
+  },
+  "eslintIgnore": [
+    ".nuxt/*.js",
+    "assets/*.js",
+    "data/*.js",
+    "dist",
+    "node_modules"
+  ],
+  "devDependencies": {
+    "axios": "^0.17.0",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.1",
+    "bulma": "^0.6.1",
+    "eslint": "^4.10.0",
+    "eslint-plugin-vue": "3.13.0",
+    "node-sass": "^4.6.0",
+    "nuxt": "^1.0.0-rc11",
+    "sass-loader": "^6.0.6",
+    "vue-i18n": "^7.3.2"
   }
 }

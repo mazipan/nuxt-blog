@@ -4,17 +4,11 @@
       <div class="container">
         <h1 class="Header__Title">Nuxt i18n</h1>
         <nav class="Header__Menu">
-          <nuxt-link class="Header__Link" :to="path('/')" exact>
-            {{ $t('links.home') }}
+          <nuxt-link class="Header__Link" :to="'/'" exact>
+            Home
           </nuxt-link>
-          <nuxt-link class="Header__Link" :to="path('/about')" exact>
-            {{ $t('links.about') }}
-          </nuxt-link>
-          <nuxt-link class="Header__Link" v-if="$i18n.locale === 'en'" :to="`/fr` + $route.fullPath" active-class="none" exact>
-            {{ $t('links.french') }}
-          </nuxt-link>
-          <nuxt-link class="Header__Link" v-else :to="$route.fullPath.replace(/^\/[^\/]+/, '')" active-class="none" exact>
-            {{ $t('links.english') }}
+          <nuxt-link class="Header__Link" :to="'/about'" exact>
+            About
           </nuxt-link>
         </nav>
       </div>
@@ -26,9 +20,7 @@
 <script>
 export default {
   methods: {
-    path (url) {
-      return (this.$i18n.locale === 'en' ? url : '/' + this.$i18n.locale + url)
-    }
+
   }
 }
 </script>
