@@ -28,7 +28,7 @@ module.exports = {
   css: [
     'bulma/css/bulma.css',
     '@/assets/css/main.css',
-    'https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'
+    'font-awesome/css/font-awesome.min.css'
   ],
   render: {
     bundleRenderer: {
