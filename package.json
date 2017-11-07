@@ -17,7 +17,8 @@
     "build": "./node_modules/.bin/nuxt build",
     "start": "./node_modules/.bin/nuxt start",
     "lint": "./node_modules/.bin/eslint --ext .js,.vue pages layout --color",
-    "dist": "./node_modules/.bin/nuxt generate"
+    "generate": "./node_modules/.bin/nuxt generate",
+    "dist": "npm run lint && npm run generate"
   },
   "babel": {
     "presets": [
