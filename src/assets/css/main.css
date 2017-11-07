@@ -5,3 +5,9 @@ body {
 .content {
   margin-top: 100px;
 }
+.nav-tag{
+  padding-right: 30px;
+}
+.navbar-burger{
+  border: 0;
+}

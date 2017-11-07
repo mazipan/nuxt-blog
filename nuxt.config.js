@@ -11,6 +11,7 @@ module.exports = {
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ]
   },
+  srcDir: 'src/',
   build: {
     publicPath: '/nuxt-blog'
   },
@@ -26,7 +27,8 @@ module.exports = {
   },
   css: [
     'bulma/css/bulma.css',
-    '@/assets/main.css'
+    '@/assets/css/main.css',
+    'https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'
   ],
   render: {
     bundleRenderer: {

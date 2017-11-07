@@ -1,24 +1,19 @@
 <template>
   <div>
-    <header class="Header">
-      <div class="container">
-        <h1 class="Header__Title">Nuxt i18n</h1>
-        <nav class="Header__Menu">
-          <nuxt-link class="Header__Link" :to="'/'" exact>
-            Home
-          </nuxt-link>
-          <nuxt-link class="Header__Link" :to="'/about'" exact>
-            About
-          </nuxt-link>
-        </nav>
-      </div>
-    </header>
-    <nuxt/>
+      <header-section></header-section>
+      <!-- NUXT CONTENT [start]-->
+      <nuxt/>
+      <!-- NUXT CONTENT [end]-->
   </div>
 </template>
 
 <script>
+
+require('../assets/js/main.js')
+
+import HeaderSection from '@/components/header-section.vue'
 export default {
+  components : { HeaderSection }, 
   methods: {
 
   }
