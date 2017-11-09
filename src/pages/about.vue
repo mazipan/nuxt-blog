@@ -1,10 +1,10 @@
 <template>
-  <div class="Content">
-    <div class="container">
-      <h1 class="Content__Title">About</h1>
-      <p>Intro</p>
-    </div>
-  </div>
+  <main class="page page--about">
+    <section class="container">
+      <h1 class="">About</h1>
+      <p>This page is powered by Nuxt.js</p>
+    </section>
+  </main>
 </template>
 
 <script>
@@ -16,3 +16,10 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+.page{
+  min-height: 10em;
+}
+</style>
+

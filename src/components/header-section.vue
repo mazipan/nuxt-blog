@@ -4,10 +4,12 @@
       <nav class="navbar has-shadow" role="navigation" aria-label="main navigation">
         <div class="navbar-brand">
 
-          <a class="navbar-item">
+          <nuxt-link to="/" class="navbar-item">
             <img src="https://mazipan.github.io/images/irfan-maulana.jpg" 
-            alt="Nuxt Blog">
-          </a>
+            :alt="blogTitle">
+            {{ blogTitle }}
+          </nuxt-link>
+          <!--
           <a class="navbar-item is-tab is-hidden-mobile is-active"><span class="icon is-medium"><i class="fa fa-home"></i></span>Home</a>
           <a class="navbar-item is-tab is-hidden-mobile">Features</a>
           <a class="navbar-item is-tab is-hidden-mobile">Pricing</a>
@@ -18,10 +20,10 @@
             <span></span>
             <span></span>
           </button>
-
+          -->
         </div>
 
-
+        <!--
         <div class="navbar-menu navbar-end" id="navMenu">
           <a class="navbar-item is-tab is-hidden-tablet is-active">Home</a>
           <a class="navbar-item is-tab is-hidden-tablet">Features</a>
@@ -58,6 +60,7 @@
             </div>
           </div>
         </div>
+        -->
       </nav>
     </div>
   </header>
@@ -65,12 +68,20 @@
 
 <script>
 export default {
+  name: 'header-section',
+  props: [
+    'blogTitle',
+    'blogDesc'
+  ],
   methods: {
 
   }
 }
 </script>
 
-<style>
-
+<style scoped>
+.navbar-item img{
+  border-radius: .25em;
+  margin-right: .25em;
+}
 </style>

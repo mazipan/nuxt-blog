@@ -13,11 +13,29 @@ module.exports = {
   },
   srcDir: 'src/',
   build: {
-    publicPath: '/nuxt-blog'
+    publicPath: '/nuxt-blog',    
+    vendor: ['axios']
   },
   loading: { color: 'cyan' },
   router: {
-    base: '/nuxt-blog/'
+    base: '/nuxt-blog/',
+    routes: [
+      {
+        name: 'index',
+        path: '/',
+        component: '@/pages/index.vue'
+      },
+      {
+        name: 'about',
+        path: '/about',
+        component: '@/pages/about.vue'
+      },
+      // {
+      //   name: 'post',
+      //   path: '/post/:slug',
+      //   component: 'pages/post.vue'
+      // }
+    ]
   },
   generate: {
     routes: [
@@ -26,7 +44,7 @@ module.exports = {
     ]
   },
   css: [
-    'bulma/css/bulma.css',
+    'bulma',
     '@/assets/css/main.css',
     'font-awesome/css/font-awesome.min.css'
   ],
