@@ -68,20 +68,15 @@
 
 <script>
 export default {
-  name: 'header-section',
-  props: [
-    'blogTitle',
-    'blogDesc'
-  ],
-  methods: {
-
-  }
-}
+  name: "header-section",
+  props: ["blogTitle", "blogDesc"],
+  methods: {}
+};
 </script>
 
 <style scoped>
-.navbar-item img{
-  border-radius: .25em;
-  margin-right: .25em;
+.navbar-item img {
+  border-radius: 0.25em;
+  margin-right: 0.25em;
 }
 </style>

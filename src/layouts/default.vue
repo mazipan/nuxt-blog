@@ -12,33 +12,27 @@
 </template>
 
 <script>
+require("../assets/js/main.js");
 
-require('../assets/js/main.js')
-
-import {mapGetters, mapActions} from 'vuex'
-import HeaderSection from '@/components/header-section.vue'
-import FooterSection from '@/components/footer-section.vue'
+import { mapGetters, mapActions } from "vuex";
+import HeaderSection from "@/components/header-section.vue";
+import FooterSection from "@/components/footer-section.vue";
 
 export default {
-  components : { 
+  components: {
     HeaderSection,
     FooterSection
-  }, 
+  },
   mounted() {
-    console.log('this', this)
-    this.getBlogData
+    this.getBlogData;
   },
   computed: {
-    ...mapGetters([
-      'blogTitle',
-      'blogDesc'
-    ]),
-    ...mapActions([
-      'getBlogData'
-    ])
+    ...mapGetters(["blogTitle", "blogDesc"]),
+    ...mapActions(["getBlogData"])
   }
-}
+};
 </script>
 
 <style scoped>
+
 </style>

@@ -6,7 +6,8 @@ const createStore = () => {
   return new Vuex.Store({
     state: {
       blogTitle: 'Irfan Maulana',
-      blogDesc: 'Pelajari, Tulis, Kemudian Bagikan'
+      blogDesc: 'Pelajari, Tulis, Kemudian Bagikan',
+      posts: []
     },
     getters: {
       blogTitle (state) {
@@ -14,6 +15,9 @@ const createStore = () => {
       },
       blogDesc (state) {
         return state.blogDesc
+      },
+      posts (state) {
+        return state.posts
       }
     },
     mutations: {
@@ -22,6 +26,9 @@ const createStore = () => {
       },
       setBlogDesc (state, data) {
         state.blogDesc = data
+      },
+      setPosts (state, data) {
+        state.posts = data
       },
     },
     actions: {
@@ -33,7 +40,17 @@ const createStore = () => {
           commit('setBlogDesc', response.data.description)
         })
         .catch(function(error) {
-          console.log('error', error)
+          console.log('error getting blog desc : ', error)
+        })
+      },
+      getPosts ({commit}) {
+        axios
+        .get(config.getApiPath('posts') + '?per_page=9')
+        .then(function(response) {          
+          commit('setPosts', response.data)
+        })
+        .catch(function(error) {
+          console.log('error getting posts : ', error)
         })
       }
     }

@@ -32,16 +32,16 @@
 
 <script>
 export default {
-  name: 'footer-section'
-}
+  name: "footer-section"
+};
 </script>
 
 <style scoped>
 .footer {
-    background-color: whitesmoke;
-    padding: 2em 1.5em 0;
+  background-color: whitesmoke;
+  padding: 2em 1.5em 0;
 }
-.center{
+.center {
   text-align: center;
 }
 </style>

@@ -9,16 +9,14 @@
 
 <script>
 export default {
-  head () {
-    return {
-      
-    }
+  head() {
+    return {};
   }
-}
+};
 </script>
 
 <style scoped>
-.page{
+.page {
   min-height: 10em;
 }
 </style>
