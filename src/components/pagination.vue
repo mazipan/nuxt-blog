@@ -38,4 +38,15 @@ export default {
 .pagination{
   margin: 1em 0;
 }
+.pagination-link{
+  background-color: #fff;
+}
+.pagination-link, .pagination-next, .pagination-previous {
+  background-color: #fff;
+}
+.is-current{
+    background-color: #3273dc;
+    border-color: #3273dc;
+    color: #fff;
+}
 </style>

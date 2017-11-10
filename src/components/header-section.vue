@@ -75,6 +75,9 @@ export default {
 </script>
 
 <style scoped>
+.hero{  
+  background-color: #fff;
+}
 .navbar-item img {
   border-radius: 0.25em;
   margin-right: 0.25em;

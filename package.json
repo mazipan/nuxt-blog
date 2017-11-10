@@ -1,55 +1,53 @@
 {
-  "name": "nuxt-blog",
-  "description": "Personal Blog with Nuxt.js",
-  "version": "1.0.0-beta",
-  "license": "MIT",
-  "author": "Irfan Maulana (https://github.com/mazipan/)",
-  "private": false,
-  "main": "https://github.com/mazipan/nuxt-blog",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/mazipan/nuxt-blog.git"
-  },
-  "scripts": {
-    "dev": "nuxt",
-    "build": "./node_modules/.bin/nuxt build",
-    "start": "./node_modules/.bin/nuxt start",
-    "lint": "./node_modules/.bin/eslint --ext .js,.vue pages layout --color",
-    "generate": "./node_modules/.bin/nuxt generate",
-    "dist": "npm run lint && npm run generate",
-    "publish": "node ./gh-publish.js"
-  },
-  "eslintConfig": {
-    "extends": [
-      "eslint:recommended",
-      "plugin:vue/recommended"
-    ]
-  },
-  "eslintIgnore": [
-    ".nuxt/*.js",
-    "assets/*.js",
-    "data/*.js",
-    "dist",
-    "node_modules"
-  ],
-  "dependencies": {
-  },
-  "devDependencies": {
-    "axios": "^0.17.0",
-    "babel-core": "^6.26.0",
-    "babel-loader": "^7.1.2",
-    "babel-preset-env": "^1.6.1",
-    "babel-plugin-transform-runtime": "^6.23.0",
-    "babel-plugin-transform-object-rest-spread": "6.26.0",
-    "bulma": "^0.6.1",
-    "eslint": "^4.10.0",
-    "eslint-plugin-vue": "3.13.0",
-    "font-awesome": "^4.7.0",
-    "gh-pages": "1.0.0",
-    "node-sass": "^4.6.0",
-    "nuxt": "^1.0.0-rc11",
-    "sass-loader": "^6.0.6",
-    "vue-i18n": "^7.3.2",
-    "vuex": "3.0.1"
-  }
+    "name": "nuxt-blog",
+    "description": "Personal Blog with Nuxt.js",
+    "version": "1.0.0-beta",
+    "license": "MIT",
+    "author": "Irfan Maulana (https://github.com/mazipan/)",
+    "private": false,
+    "main": "https://github.com/mazipan/nuxt-blog",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/mazipan/nuxt-blog.git"
+    },
+    "scripts": {
+        "dev": "nuxt",
+        "build": "./node_modules/.bin/nuxt build",
+        "start": "./node_modules/.bin/nuxt start",
+        "lint": "./node_modules/.bin/eslint --ext .js,.vue pages layout --color",
+        "generate": "./node_modules/.bin/nuxt generate",
+        "dist": "npm run lint && npm run generate",
+        "publish": "node ./gh-publish.js"
+    },
+    "eslintConfig": {
+        "extends": [
+            "eslint:recommended",
+            "plugin:vue/recommended"
+        ]
+    },
+    "eslintIgnore": [
+        ".nuxt/*.js",
+        "assets/*.js",
+        "data/*.js",
+        "dist",
+        "node_modules"
+    ],
+    "dependencies": {},
+    "devDependencies": {
+        "axios": "^0.17.0",
+        "babel-core": "^6.26.0",
+        "babel-loader": "^7.1.2",
+        "babel-preset-env": "^1.6.1",
+        "babel-plugin-transform-runtime": "^6.23.0",
+        "babel-plugin-transform-object-rest-spread": "6.26.0",
+        "bulma": "^0.6.1",
+        "eslint": "^4.10.0",
+        "eslint-plugin-vue": "3.13.0",
+        "gh-pages": "1.0.0",
+        "node-sass": "^4.6.0",
+        "nuxt": "^1.0.0-rc11",
+        "sass-loader": "^6.0.6",
+        "vue-i18n": "^7.3.2",
+        "vuex": "3.0.1"
+    }
 }

@@ -12,7 +12,8 @@
           :postDate="post.date"
           :postTitle="post.title.rendered" 
           :postSlug="post.slug" 
-          :postExcerpt="post.excerpt.rendered">
+          :postExcerpt="post.excerpt.rendered"
+          :postContent="post.content.rendered">
         </card-post>
       </div>
       
