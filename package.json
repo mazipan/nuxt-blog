@@ -16,6 +16,7 @@
         "start": "./node_modules/.bin/nuxt start",
         "lint": "./node_modules/.bin/eslint --ext .js,.vue pages layout --color",
         "generate": "./node_modules/.bin/nuxt generate",
+        "buildgenerate": "npm run build && npm run generate",
         "dist": "npm run lint && npm run generate",
         "publish": "node ./gh-publish.js"
     },
