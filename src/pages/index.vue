@@ -24,9 +24,9 @@
 </template>
 
 <script>
-import { mapGetters, mapActions } from "vuex";
-import CardPost from "@/components/card-post.vue";
-import Pagination from "@/components/pagination.vue";
+import { mapGetters, mapActions } from 'vuex'
+import CardPost from '@/components/card-post.vue'
+import Pagination from '@/components/pagination.vue'
 
 export default {
   components: {
@@ -34,21 +34,21 @@ export default {
     Pagination
   },
   data() {
-    return {};
+    return {}
+  },
+  computed: {
+    ...mapGetters(['blogTitle', 'blogDesc', 'posts']),
+    ...mapActions(['getPosts'])
   },
   mounted() {
     //this.$root.$loading.start;
-    this.getPosts;
-  },
-  computed: {
-    ...mapGetters(["blogTitle", "blogDesc", "posts"]),
-    ...mapActions(["getPosts"])
+    this.getPosts
   }
-};
+}
 </script>
 
 <style>
-.home__title{
+.home__title {
   margin: 1em 0 2em;
 }
 </style>

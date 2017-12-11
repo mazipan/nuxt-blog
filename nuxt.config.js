@@ -18,29 +18,7 @@ module.exports = {
     },
     loading: { color: 'cyan' },
     router: {
-        base: '/nuxt-blog/',
-        routes: [{
-                name: 'index',
-                path: '/',
-                component: '@/pages/index.vue'
-            },
-            {
-                name: 'about',
-                path: '/about',
-                component: '@/pages/about.vue'
-            },
-            // {
-            //   name: 'post',
-            //   path: '/post/:slug',
-            //   component: 'pages/post.vue'
-            // }
-        ]
-    },
-    generate: {
-        routes: [
-            '/',
-            '/about'
-        ]
+        base: '/nuxt-blog/'
     },
     css: [
         'bulma',

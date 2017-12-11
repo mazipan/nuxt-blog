@@ -10,9 +10,9 @@
 <script>
 export default {
   head() {
-    return {};
+    return {}
   }
-};
+}
 </script>
 
 <style scoped>
