@@ -13,7 +13,6 @@ module.exports = {
     },
     srcDir: 'src/',
     build: {
-        publicPath: '/nuxt-blog',
         vendor: ['axios']
     },
     loading: { color: 'cyan' },
