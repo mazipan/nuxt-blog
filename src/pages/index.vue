@@ -47,7 +47,7 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss">
 .home__title {
   margin: 1em 0 2em;
 }

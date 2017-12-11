@@ -1,4 +1,4 @@
-export const PostMixin = {
+export default {
   methods: {
     subStringDate: function(dateStr) {
       return dateStr.substring(10, 0)

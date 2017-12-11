@@ -15,7 +15,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="scss">
 .page {
   min-height: 10em;
 }

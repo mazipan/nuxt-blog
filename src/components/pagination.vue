@@ -34,7 +34,7 @@ export default {
 };
 </script>
 
-<style scoped>
+<style lang="scss">
 .pagination{
   margin: 1em 0;
 }
