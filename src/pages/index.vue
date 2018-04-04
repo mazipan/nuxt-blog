@@ -6,17 +6,17 @@
         <h1 class="title">{{ blogTitle }}</h1>
         <h2 class="subtitle">{{ blogDesc }}</h2>
       </div>
-      
+
       <div class="columns is-centered is-multiline">
         <card-post class="column is-one-third" v-for="post in posts" :key="post.id"
           :postDate="post.date"
-          :postTitle="post.title.rendered" 
-          :postSlug="post.slug" 
+          :postTitle="post.title.rendered"
+          :postSlug="post.slug"
           :postExcerpt="post.excerpt.rendered"
           :postContent="post.content.rendered">
         </card-post>
       </div>
-      
+
       <pagination></pagination>
 
     </div>
